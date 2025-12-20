@@ -1,13 +1,45 @@
 /* Aplicar fonte Inter globalmente */
 body {
     font-family: 'Inter', sans-serif;
+    padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
 }
 
 /* Header */
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+/* Headroom states */
+.headroom {
+    transition: transform 0.3s ease-in-out;
+}
+
+.headroom--pinned {
+    transform: translateY(0);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.headroom--top {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.headroom--not-top {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .navbar-brand {
@@ -110,11 +142,48 @@ h3, h4, h5 {
     font-weight: 600;
 }
 
+/* Títulos de seção com destaque */
+.section-title {
+    font-weight: 700;
+    color: #1f2937;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+    display: inline-block;
+    min-width: 200px;
+}
+
 /* Efeito de hover nos cards de lista */
 .offer-list .card:hover {
     transform: translateY(-2px);
     transition: transform 0.2s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* Sidebar Container */
+.sidebar-sticky {
+    position: sticky;
+    top: 100px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Scrollbar personalizada para sidebar */
+.sidebar-sticky::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-sticky::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-sticky::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+}
+
+.sidebar-sticky::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
 }
 
 /* Sidebar Cards */
@@ -197,6 +266,13 @@ h3, h4, h5 {
 @media (max-width: 991px) {
     .sidebar-card {
         margin-bottom: 1.5rem;
+    }
+    
+    .sidebar-sticky {
+        position: relative;
+        top: auto;
+        max-height: none;
+        overflow-y: visible;
     }
 }
 
