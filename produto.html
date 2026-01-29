@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicleta Mountain Bike - MultiTrocas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="header bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
+                <div class="container-fluid px-0">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/logo_multitrocas.png" alt="MultiTrocas" class="logo-img">
+                    </a>
+                    
+                    <!-- Toggler para mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Menu e busca -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <!-- Barra de pesquisa (centralizada em desktop) -->
+                        <div class="mx-auto my-3 my-lg-0" style="max-width: 400px; width: 100%;">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar ofertas..." aria-label="Buscar">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Links de navegação -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container py-4">
+        <div class="row">
+            <!-- Coluna Principal -->
+            <div class="col-lg-8">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="mb-3">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Início</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Esportes</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Bicicleta Mountain Bike</li>
+                    </ol>
+                </nav>
+
+                <!-- Card Principal do Produto -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=600&h=600&fit=crop" 
+                                 alt="Bicicleta Mountain Bike" 
+                                 class="img-fluid rounded-start"
+                                 style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="col-md-6 p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <span class="badge bg-primary">Esportes</span>
+                                <button class="btn btn-link text-danger p-0">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                            </div>
+                            <h1 class="h3 fw-bold mb-3">Bicicleta Mountain Bike</h1>
+                            <div class="mb-3">
+                                <small class="text-muted">Publicado há 2 dias</small>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="https://ui-avatars.com/api/?name=Maria+Silva&background=6366f1&color=fff" 
+                                     class="rounded-circle me-2" width="40" height="40">
+                                <div>
+                                    <a href="perfil.html" class="text-decoration-none text-dark fw-semibold d-block">Maria Silva</a>
+                                    <div class="small">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <span class="fw-semibold">4.5</span>
+                                        <span class="text-muted">(30 avaliações)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-dark btn-lg">
+                                    <i class="bi bi-chat-dots me-2"></i>Propor Troca
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    <i class="bi bi-share me-2"></i>Compartilhar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Descrição -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h2 class="h5 fw-bold mb-3">Descrição</h2>
+                        <p class="text-muted">
+                            Bicicleta Mountain Bike em ótimo estado de conservação. Possui 21 marchas, freios a disco, 
+                            suspensão dianteira e quadro de alumínio resistente. Ideal para trilhas e uso urbano.
+                        </p>
+                        <p class="text-muted mb-0">
+                            Pouco usada, apenas algumas saídas nos finais de semana. Todos os componentes funcionando 
+                            perfeitamente. Acompanha capacete e kit de ferramentas básicas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sugestões de Troca -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h2 class="h5 fw-bold mb-3">
+                            <i class="bi bi-arrow-left-right me-2 text-primary"></i>Aceito em Troca
+                        </h2>
+                        <div class="row g-2">
+                            <div class="col-auto">
+                                <span class="badge bg-light text-dark border">Serviço de design de interiores</span>
+                            </div>
+                            <div class="col-auto">
+                                <span class="badge bg-light text-dark border">Notebook</span>
+                            </div>
+                            <div class="col-auto">
+                                <span class="badge bg-light text-dark border">Smartphone</span>
+                            </div>
+                            <div class="col-auto">
+                                <span class="badge bg-light text-dark border">Aulas de idiomas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentários -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h2 class="h5 fw-bold mb-4">Comentários (3)</h2>
+                        
+                        <!-- Comentário 1 -->
+                        <div class="mb-4 pb-4 border-bottom">
+                            <div class="d-flex align-items-start">
+                                <img src="https://ui-avatars.com/api/?name=João+Pedro&background=10b981&color=fff" 
+                                     class="rounded-circle me-3" width="40" height="40">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div>
+                                            <h6 class="mb-0 fw-semibold">João Pedro</h6>
+                                            <small class="text-muted">Há 1 dia</small>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0 text-muted">
+                                        Olá! Tenho interesse na bike. Aceita trocar por um notebook i5 com 8GB de RAM?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comentário 2 -->
+                        <div class="mb-4 pb-4 border-bottom">
+                            <div class="d-flex align-items-start">
+                                <img src="https://ui-avatars.com/api/?name=Ana+Costa&background=f59e0b&color=fff" 
+                                     class="rounded-circle me-3" width="40" height="40">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div>
+                                            <h6 class="mb-0 fw-semibold">Ana Costa</h6>
+                                            <small class="text-muted">Há 2 dias</small>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0 text-muted">
+                                        A bike está em perfeito estado mesmo? Qual o tamanho do quadro?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comentário 3 -->
+                        <div class="mb-4">
+                            <div class="d-flex align-items-start">
+                                <img src="https://ui-avatars.com/api/?name=Carlos+Lima&background=ec4899&color=fff" 
+                                     class="rounded-circle me-3" width="40" height="40">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div>
+                                            <h6 class="mb-0 fw-semibold">Carlos Lima</h6>
+                                            <small class="text-muted">Há 2 dias</small>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0 text-muted">
+                                        Ótima oferta! Aceita trocar por aulas de violão?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Formulário de Comentário -->
+                        <div class="mt-4 pt-4 border-top">
+                            <h6 class="fw-semibold mb-3">Deixe um comentário</h6>
+                            <form>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="3" placeholder="Digite sua pergunta ou comentário..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-send me-2"></i>Enviar Comentário
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Informações do Anúncio -->
+                <div class="card border-0 shadow-sm mb-4 sticky-top" style="top: 100px;">
+                    <div class="card-body p-4">
+                        <h6 class="fw-bold mb-3">Informações do Anúncio</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-3">
+                                <small class="text-muted d-block">Categoria</small>
+                                <span class="fw-semibold">Esportes</span>
+                            </li>
+                            <li class="mb-3">
+                                <small class="text-muted d-block">Estado</small>
+                                <span class="fw-semibold">Muito Bom</span>
+                            </li>
+                            <li class="mb-3">
+                                <small class="text-muted d-block">Localização</small>
+                                <span class="fw-semibold">Brasília - DF</span>
+                            </li>
+                            <li class="mb-3">
+                                <small class="text-muted d-block">Visualizações</small>
+                                <span class="fw-semibold">127 visualizações</span>
+                            </li>
+                            <li>
+                                <small class="text-muted d-block">Código do anúncio</small>
+                                <span class="fw-semibold">#MTB-2024-001</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Outras Ofertas do Usuário -->
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h6 class="fw-bold mb-3">Outras ofertas de Maria Silva</h6>
+                        <a href="#" class="text-decoration-none">
+                            <div class="d-flex mb-3 p-2 rounded hover-bg-light">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100&h=100&fit=crop" 
+                                     class="rounded me-3" width="60" height="60" style="object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-1 small fw-semibold text-dark">Fone de Ouvido</h6>
+                                    <small class="text-muted">Troco por: Mouse gamer</small>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="perfil.html" class="btn btn-outline-primary w-100 btn-sm">
+                            Ver todos os anúncios
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/headroom.js@0.12.0/dist/headroom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Inicializar Headroom.js
+        var header = document.querySelector(".header");
+        if (header) {
+            var headroom = new Headroom(header, {
+                offset: 100,
+                tolerance: {
+                    up: 5,
+                    down: 0
+                },
+                classes: {
+                    initial: "headroom",
+                    pinned: "headroom--pinned",
+                    unpinned: "headroom--unpinned",
+                    top: "headroom--top",
+                    notTop: "headroom--not-top"
+                }
+            });
+            headroom.init();
+        }
+    </script>
+</body>
+</html>
